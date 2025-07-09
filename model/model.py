@@ -68,6 +68,7 @@ class Model:
 
         return longest_path[1:]
 
+#procedura ricorsiva che calcoli un percorso di peso massimo a partire da un nodo sorgente
     def getBestPath(self, source):
         self._bestPath = []
         self._bestWeight = 0
