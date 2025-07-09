@@ -1,7 +1,9 @@
 from dataclasses import dataclass
+
+
 @dataclass
 
-class Store:
+class Store():
     store_id: int
     store_name: str
     phone: str
@@ -11,11 +13,12 @@ class Store:
     state: str
     zip_code: int
 
+
     def __hash__(self):
-        return hash(self.store_id)
+      return hash(self.store_id)
 
     def __eq__(self, other):
         return self.store_id == other.store_id
 
     def __str__(self):
-        return f"Store {self.store_name} ({self.store_id})"
+        return f"Store: {self.store_name} ({self.store_id})"
